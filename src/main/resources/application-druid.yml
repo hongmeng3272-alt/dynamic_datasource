@@ -1,0 +1,12 @@
+# 数据源配置
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://ip:port/Schema?currentSchema=yourschema&stringtype=unspecified
+        username: yourname
+        password: yourpass
+        type: com.alibaba.druid.pool.DruidDataSource
+mybatis-plus:
+    configuration:
+        log-impl:
+            org.apache.ibatis.logging.stdout.StdOutImpl
